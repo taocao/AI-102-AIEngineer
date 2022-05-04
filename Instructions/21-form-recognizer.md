@@ -42,7 +42,7 @@ To use the Form Recognizer service, you need a Form Recognizer or Cognitive Serv
 
 ![An image of an invoice.](../21-custom-form/sample-forms/Form_1.jpg)  
 
-You'll use the sample forms from the **21-custom-form/sample-forms** folder in this repo, which contain all the files you'll need to train a model without labels and another model with labels.
+You'll use the sample forms from the **21-custom-form/sample-forms** folder in this repo, which contain all the files you'll need to train a model with labels.
 
 1. In Visual Studio Code, in the **21-custom-form** folder,  expand the **sample-forms** folder. Notice there are files ending in **.json** and **.jpg** in the folder.
 
@@ -104,7 +104,7 @@ setup
 
 ## Train a model using the Form Recognizer SDK
 
-Suppose after you trained a model with the invoice forms, you wanted to see how a model trained on labeled data performs. When you trained a model without labels you only used the **.jpg** forms from your Azure blob container. Now you will train a model using the **.jpg** and **.json** files.
+Now you will train a model using the **.jpg** and **.json** files.
 
 1. In Visual Studio Code, in the **21-custom-form/sample-forms** folder, open **fields.json** and review the JSON document it contains. This file defines the fields that you will train a model to extract from the forms.
 2. Open **Form_1.jpg.labels.json** and review the JSON it contains. This file identifies the location and values for named fields in the **Form_1.jpg** training document.
